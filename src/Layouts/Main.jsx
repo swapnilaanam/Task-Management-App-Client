@@ -1,8 +1,12 @@
 import { Outlet } from "react-router-dom";
+import Sidebar from "../components/Shared/Sidebar/Sidebar";
 
 const Main = () => {
     return (
-        <Outlet />
+        <div className="w-full flex">
+            <Sidebar />
+            <Outlet />   
+        </div>
     );
 };
 
