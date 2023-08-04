@@ -7,7 +7,7 @@ const Navbar = ({children}) => {
                 </div>
                 <div className="flex-none gap-2">
                     <div className="form-control">
-                        <input type="text" placeholder="Search Task By Name..." className="input rounded-md input-sm input-bordered w-32 md:w-auto" />
+                        {/* <input type="text" placeholder="Search Task By Name..." className="input rounded-md input-sm input-bordered w-32 md:w-auto" /> */}
                     </div>
                 </div>
             </div>
