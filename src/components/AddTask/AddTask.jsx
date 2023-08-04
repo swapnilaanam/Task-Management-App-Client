@@ -32,12 +32,12 @@ const AddTask = () => {
     }
 
     return (
-        <div className="w-full bg-green-50 py-16">
-            <div className="max-w-5xl mx-auto bg-white border-2 border-gray-200 rounded-md flex items-center shadow-xl">
-                <div className="w-1/2">
+        <div className="w-full bg-green-50 py-14 px-4">
+            <div className="max-w-5xl mx-auto bg-white border-2 border-gray-200 rounded-md flex flex-col md:flex-row justify-center items-center shadow-xl">
+                <div className="w-full md:w-1/2">
                     <Lottie animationData={formAnimation} />
                 </div>
-                <form onSubmit={handleSubmit(onSubmit)} className="w-1/2 bg-orange-300 py-8 rounded-tr-md rounded-br-md">
+                <form onSubmit={handleSubmit(onSubmit)} className="w-full md:w-1/2 bg-orange-300 py-8 rounded-tr-md rounded-br-md">
                     <h2 className="text-2xl font-semibold text-center mb-5">Create A Task</h2>
                     <div className="space-y-2 mx-10">
                         <div className="form-control w-full">

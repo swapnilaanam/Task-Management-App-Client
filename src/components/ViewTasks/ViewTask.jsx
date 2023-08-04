@@ -12,20 +12,20 @@ const ViewTask = ({ index, task, handleUpdateStatus, handleDeleteTask }) => {
 
     return (
         <div>
-            <div className="card w-96 h-64 bg-base-100 rounded-md shadow-xl">
+            <div className="card w-80 md:w-96 md:h-64 bg-base-100 rounded-md shadow-xl">
                 <div className="bg-orange-300 ps-7 py-6 rounded-t-md">
-                    <h2 className="card-title text-xl font-semibold">{taskTitle}</h2>
+                    <h2 className="card-title text-base md:text-xl font-semibold">{taskTitle}</h2>
                     <div className="badge badge-neutral badge-md mt-2 px-4 py-3 font-medium text-white">
                         {taskStatus}
                     </div>
                 </div>
                 <div className="card-body py-4 pe-6">
-                    <p className="text-lg font-medium">{taskDescription}</p>
-                    <div className="card-actions justify-between items-center">
-                        <div className="badge badge-neutral px-4 py-3 font-medium text-white">
+                    <p className="text-base md:text-lg font-medium">{taskDescription}</p>
+                    <div className="card-actions justify-center md:justify-between items-center">
+                        <div className="badge badge-neutral px-4 py-3 font-medium text-white mt-3">
                             {taskDate}
                         </div>
-                        <div className="flex gap-3">
+                        <div className="flex gap-3 mt-3">
                             <label htmlFor={`status_${index + 1}`} className="btn btn-warning btn-sm">Edit</label>
                             <input type="checkbox" id={`status_${index + 1}`} className="modal-toggle" />
                             <div className="modal">
